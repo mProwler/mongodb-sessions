@@ -2,6 +2,7 @@
   "author": "Peter Lyons <pete@peterlyons.com> (http://peterlyons.com/)",
   "dependencies": {
     "async": "1.5.2",
+    "cheerio": "^0.20.0",
     "dotenv": "1.2.0",
     "ejs": "2.3.4",
     "express": "4.13.3",
