@@ -1,7 +1,14 @@
 var config = require('./config')
 var express = require('express')
+var mongoose = require('mongoose');
 
-var app = express()
+var app = express(),
+    userRouter = require('./users/router');
+
+mongoose.connect(config.mongodbUrl);
+
+app.use(userRouter);
+
 app.set('view engine', 'ejs')
 app.set('views', __dirname)
 
